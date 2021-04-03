@@ -31,7 +31,7 @@ public class EmailScheduler {
         );
     }
 
-    private String constructTaskString(long size){
+    public String constructTaskString(long size){
         String taskString = "task";
         if(size>1){
             taskString+="s";

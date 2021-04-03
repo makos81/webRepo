@@ -12,7 +12,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class DbService {
     @Autowired
-    private final TaskRepository repository;
+    private TaskRepository repository;
 
     public List<Task> getAllTasks() {
         return repository.findAll();
